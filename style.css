@@ -1,0 +1,158 @@
+h1{
+    text-align: center; 
+    margin: 10px 0;
+    padding: 20px;
+    color: #43248d;
+    font-family: "Anton", sans-serif;
+    font-size: 70px;
+    font-weight: 300;
+    font-style: normal;
+}
+body {
+    background-image: url('images/fundo.png');
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background: #f375db;
+    margin: 0;
+    padding: 0;
+}
+
+.filmes {
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+}
+
+.form-filmes{
+    flex: 1;
+    background: #f89eec;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(164, 1, 179, 0.739);
+    overflow: auto;
+}
+
+.form-filmes h2 {
+  padding-top: 5px; 
+  margin-top: 0;     
+}
+
+input[type="text"], input[type="number"] {
+    display: block;
+    width: 75%;
+    margin: 8px 0;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 2px solid #56008f
+}
+
+.lista-filmes {
+    flex: 1;
+    background: #f89eec;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(164, 1, 179, 0.739);
+    overflow: auto;
+}
+
+.lista-filmes h2 {
+  padding-top: 5px; 
+  margin-top: 0;   
+}
+
+.checkbox-nota {
+    margin: 20px 0;
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 4px; 
+    margin-right: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked::before {
+    content: "X";
+    color: #070086;
+    font-weight: bold;
+    font-size: 19px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    padding: 10px 20px;
+    background: #43248d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+.filme {
+    margin: 10px 0;
+    padding: 10px;
+    background: #fe85de;
+    border-radius: 20px;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.btn-deletar {
+    background: rgb(148, 19, 8);
+    margin-left: 10px;
+}
+
+.btn-editar {
+    background-color: #ffa73b;
+    margin-left: 10px;
+}
+
+.btn-salvar {
+    background-color: #258a03;
+    margin-left: 10px;
+}
+
+#informar-titulo {
+    display: block;
+    width: 25%;
+    margin: 8px 0;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 2px solid #56008f
+
+}
+
+.input-group {
+  display: flex;
+  gap: 8px; 
+  align-items: center; 
+}
+
+.input-group input {
+  flex: 1; 
+  padding: 6px 10px;
+  font-size: 16px;
+}
+
+.img-bear {
+    width: 50px;
+    height: auto;
+    margin-bottom: 20px;
+}

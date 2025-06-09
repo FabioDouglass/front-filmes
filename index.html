@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Acervo Filmes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/claquette.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+</head>
+<body style="background-image: url('images/fundo.png');"></body>
+    <h1>Acervo Filmes</h1>
+    <div class="filmes">
+        <div class="form-filmes">
+            <img src="images/bluebear.png" class="img-bear">
+            <img src="images/purplebear.png" class="img-bear">
+            <img src="images/pinkbear.png" class="img-bear">
+            <h2>Registrar Filme</h2>
+            <input type="text" id="titulo" placeholder="Título">
+            <input type="text" id="diretor" placeholder="Diretor">
+            <input type="number" id="ano" placeholder="Ano de Lançamento">
+            <div class="checkbox-nota">
+                <label>Nota:</label>
+                <div id="notas">
+                    <label><input type="radio" name="nota" value="0">0</label>
+                    <label><input type="radio" name="nota" value="1">1</label>
+                    <label><input type="radio" name="nota" value="2">2</label>
+                    <label><input type="radio" name="nota" value="3">3</label>
+                    <label><input type="radio" name="nota" value="4">4</label>
+                    <label><input type="radio" name="nota" value="5">5</label>
+                </div>
+            </div>
+            <button onclick="registrarFilme()">Registrar</button>
+        </div>
+
+        <div class="lista-filmes">
+            <img src="images/bluebear.png" class="img-bear">
+            <img src="images/purplebear.png" class="img-bear">
+            <img src="images/pinkbear.png" class="img-bear"><br>     
+            <h2 id="h-ultimos-filmes">Últimos Filmes Registrados</h2>
+            <h2 id="h-filmes-registrados" style="display:none;">Filmes Registrados</h2>
+            <div id="ultimos-filmes"></div>
+                <div class="input-group">
+                    <input type="text" id="informar-titulo" placeholder="Informe o título do filme">
+                    <button id="btn-pesquisar" onclick="listarFilme()">Pesquisar filme</button>
+                </div>  
+            <button id="btn-listar-todos" onclick="listarTodos()">Listar Todos</button>
+            <button id="btn-voltar" onclick="voltarParaUltimos()" style="display:none;">Voltar</button>
+            <div id="todos-filmes"></div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
