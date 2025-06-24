@@ -20,7 +20,12 @@
             <h2>Registrar Filme</h2>
             <input type="text" id="titulo" placeholder="Título">
             <input type="text" id="diretor" placeholder="Diretor">
-            <input type="number" id="ano" placeholder="Ano de Lançamento">
+            <input type="number" id="ano" placeholder="Ano de Lançamento" min="1888">
+            <script>
+                const inputAno = document.getElementById('ano');
+                const anoAtual = new Date().getFullYear();
+                inputAno.max = anoAtual;
+            </script>
             <div class="checkbox-nota">
                 <label>Nota:</label>
                 <div id="notas">
