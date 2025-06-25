@@ -29,7 +29,7 @@ async function registrarFilme() {
         }
     } else {
         const erro = await response.json();
-        alert(erro.erro || erro.message || "Erro ao registrar filme.");
+        alert(erro.erro || erro.mensagem || "Erro ao registrar filme.");
     }
 }
 
@@ -123,7 +123,7 @@ async function deletarFilme(titulo) {
         listarUltimos();
     } else {
         const erro = await response.json();
-        alert(erro.erro || "Erro ao deletar filme.");
+        alert(erro.erro || erro.mensagem || "Erro ao deletar filme.");
     }
 }
 
@@ -181,7 +181,7 @@ async function salvarFilme(titulo) {
         listarUltimos();
     } else {
         const erro = await response.json();
-        alert(erro.erro || "Erro ao atualizar filme.");
+        alert(erro.erro || erro.mensagem || "Erro ao atualizar filme.");
         listarTodos();
         listarUltimos();
     }
